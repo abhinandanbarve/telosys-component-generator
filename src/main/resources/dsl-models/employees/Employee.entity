@@ -1,0 +1,14 @@
+
+#Foo(abc)
+
+Employee {
+	id : int {@Id  @NotNull #HTMLTYPE(Text)  @Label("Employee Id")}; 
+	firstName : string { @SizeMax(40)  #HTMLTYPE(Text) @Label("First Name")} ;
+	lasttName : string { @SizeMax(40)  #HTMLTYPE(Text) @Label("Last Name")} ;
+	address : string { @SizeMax(40)  #HTMLTYPE(Text) @Label("Address")} ;
+	email : string { @SizeMax(40)  #HTMLTYPE(Email) @Label("Email Id")} ;
+	birthDate : date { @Past #HTMLTYPE(button) @Label("Birth Date")} ;
+	age : string { #HTMLTYPE(number) @Label("Age")} ;
+	salary : string { #HTMLTYPE(number) @Label("Salary")} ;
+	gender : string { @SizeMax(40)  #HTMLTYPE(Text) @Label("Gender")} ;
+}

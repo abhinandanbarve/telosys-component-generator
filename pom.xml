@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.e2e</groupId>
+	<artifactId>telosys-component-generator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>telosys-component-generator </name>
+	<description>Component Generator </description>
+	<packaging>jar</packaging>
+
+	<properties>
+    	<telosys-tools-all-systemPath>C:\\Users\\abhinandanb\\git\\telosys-component-generator\\lib\\telosys-tools-all-4.2.0.jar</telosys-tools-all-systemPath>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.telosys</groupId>
+			<artifactId>telosys-tools-all</artifactId> 
+			<version>4.2.0</version>
+			<scope>system</scope>
+    		<systemPath>${telosys-tools-all-systemPath}</systemPath>
+		</dependency>
+		
+		<!-- VELOCITY -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.18.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin> <!-- unused (no compilation) just to avoid Eclipse warning -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>
+

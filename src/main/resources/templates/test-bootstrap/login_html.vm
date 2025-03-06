@@ -1,0 +1,5 @@
+#parse("init_var_entity.vm")
+#set ( $submitAction = "{{ submitAction }}" )
+#set ($student = "{user.name}" )
+
+<h1 th:text="$$student"></h1>
